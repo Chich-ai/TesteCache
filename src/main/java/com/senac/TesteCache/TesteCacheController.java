@@ -13,16 +13,16 @@ public class TesteCacheController {
 
     @Autowired
     public TesteCacheController(TesteCacheService testeCacheService) {
-        this.TesteCacheService = testeCacheService;
+        this.testeCacheService = testeCacheService;
     }
 
     @GetMapping("/getCachevalor")
     public String getCacheValue(@RequestParam String key) {
-        return testeCacheService.getValue(key);
+        return testeCacheService.getvalor(key);
     }
 
     @PostMapping("/limparCache")
     public void clearCache() {
-        testeCacheService.clearCache();
+        testeCacheService.limparCache();
     }
 }

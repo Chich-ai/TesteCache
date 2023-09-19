@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class TesteCacheService {
 
-    @Cacheable(value = "teste", key = "#key")
+    @Cacheable(value = "teste", key = "#valor")
     public String getvalor(String valor){
         return "retorno é: " + valor;
     }
