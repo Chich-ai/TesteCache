@@ -12,7 +12,7 @@ public class TesteCacheController {
     private final TesteCacheService testeCacheService;
 
     @Autowired
-    public TesteCacheController(TesteCacheService testeCacheService){
+    public TesteCacheController(TesteCacheService testeCacheService) {
         this.TesteCacheService = testeCacheService;
     }
 
@@ -25,10 +25,4 @@ public class TesteCacheController {
     public void clearCache() {
         testeCacheService.clearCache();
     }
-
-    public TesteCacheController() {
-        testeCacheService = null;
-    }
-
-
 }
