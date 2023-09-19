@@ -17,8 +17,8 @@ public class TesteCacheController {
     }
 
     @GetMapping("/getCachevalor")
-    public String getCacheValue(@RequestParam String key) {
-        return testeCacheService.getvalor(key);
+    public String getCacheValue(@RequestParam String valor) {
+        return testeCacheService.getvalor(valor);
     }
 
     @PostMapping("/limparCache")
